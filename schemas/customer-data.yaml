@@ -1,0 +1,26 @@
+mode: plain
+tables:
+  users:
+    rowCount: 5
+    columns:
+      - name: id
+        type: integer
+        auto_increment: true
+      - name: username
+        type: string
+        unique: true
+        regex: '^[a-z0-9_]+$'
+      - name: age
+        type: integer
+        min: 18
+        max: 80
+  products:
+    rowCount: 3
+    columns:
+      - name: product_id
+        type: integer
+        auto_increment: true
+      - name: name
+        type: string
+      - name: price
+        type: float
