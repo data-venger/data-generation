@@ -1,0 +1,11 @@
+mode: plain
+tables:
+  bank-users:
+    rowCount: 5
+    columns:
+      - name: id
+        type: integer
+        auto_increment: true
+      - name: first_name
+        type: string
+
